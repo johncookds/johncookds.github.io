@@ -9,12 +9,12 @@ categories: papers computer-vision
 
 This is a blog post about the paper titled [Self-Supervised Scene De-occlusion][project]. The link is to the main project page which contains a very nice overview of their main steps as well as 2 example use cases. The bathroom re-arrangement use case, shown below, was shared on twitter when the overview video first came out. Setting aside any technical details, the authors deserve credit for releasing a summary video along with examples and demos available on their github project repo.
 
-![Bathroom re-ordering]({{ site.url }}/assets/Self-Supervised_Scene_De-occlusion_summary_video.gif)
+![Bathroom re-ordering](https://johncookds.github.io/assets/1/Self-Supervised_Scene_De-occlusion_summary_video.gif)
 
 
 The paper takes for granted that the desired objects in the image have all been detected. Thus the input image is not a raw image but the image with appropriate bounding boxes, such as shown below (taken from their example).
 
-![model input example]({{ site.url }}/assets/model_input.png)
+![model input example](https://johncookds.github.io/assets/1/model_input.png)
 
 The paper breaks the problem into the following problems:
 1. Recover the ordering of objects in the image
@@ -40,7 +40,7 @@ Then, for a given target object:
 
 6. Use the trained PCNet-Content to  predict the unobstructed object
 
-![model/algorithm steps]({{ site.url }}/assets/overview.png)
+![model/algorithm steps](https://johncookds.github.io/assets/1/overview.png)
 
 ## Results and Takeaways
 
