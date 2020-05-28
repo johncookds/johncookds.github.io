@@ -88,7 +88,9 @@ PCNet-Content is trained with a similar regime to PCNet-M where their is a targe
 # References
 
 [Self-Supervised Scene de-occlusion project][https://xiaohangzhan.github.io/projects/deocclusion/]
+
 [Unet Paper][https://arxiv.org/pdf/1505.04597.pdf]
+
 [Facebook AI supervised segmentation][https://arxiv.org/pdf/1509.01329v1.pdf]
 
 
