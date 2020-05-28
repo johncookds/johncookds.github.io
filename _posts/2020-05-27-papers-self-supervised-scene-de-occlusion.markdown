@@ -40,7 +40,7 @@ The paper breaks the problem into the following problems:
 
 ## Results and Takeaways
 
-The paper's results seem to suggest that it is the (or one of the) first unsupervised methods for scene de-occlusion. I say this because while they test their method against a supervised method from a [paper published by Facebook AI in 2017] they only use a convex hull approximation as their comparison for the unsupervised case. If not, the choice of such a method to compare against seems weird.
+The paper's results seem to suggest that it is the (or one of the) first unsupervised methods for scene de-occlusion. I say this because while they test their method against a supervised method from a [paper published by Facebook AI in 2017][facebook_paper] they only use a convex hull approximation as their comparison for the unsupervised case. If not, the choice of such a method to compare against seems weird.
 
 They show that their method outperforms the convex approximations and comes close to the supervised method in amodal completion on two datasets as well as amodal segmentation.
 
@@ -85,8 +85,15 @@ PCNet-Content is trained with a similar regime to PCNet-M where their is a targe
 
 ![PCNet-Content Training](https://johncookds.github.io/assets/1/pcnetc_training.png)
 
+# References
+
+[Self-Supervised Scene de-occlusion project][https://xiaohangzhan.github.io/projects/deocclusion/]
+[Unet Paper][https://arxiv.org/pdf/1505.04597.pdf]
+[Facebook AI supervised segmentation][https://arxiv.org/pdf/1509.01329v1.pdf]
+
 
 [project]: https://xiaohangzhan.github.io/projects/deocclusion/
+[facebook_paper]: https://arxiv.org/pdf/1509.01329v1.pdf
 [unet_paper]: https://arxiv.org/pdf/1505.04597.pdf
 
 
