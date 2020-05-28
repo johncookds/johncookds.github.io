@@ -17,19 +17,15 @@ The paper takes for granted that the desired objects in the image have all been 
 ![model input example](https://johncookds.github.io/assets/1/model_input.png)
 
 The paper breaks the problem into the following problems:
-1. Recover the ordering of objects in the image
-
-Then, for a given target object:
-
-2. Retrieve all the objects blocking('occluding') the target object
+1. Recover the ordering of objects in the image.
+2. Retrieve all the objects blocking('occluding') for a given target object
 3. Generate two images to be used as input to the PCNet-Mask:
     
     A. The first is a black and white image centered on the target image with the target object identified as the target, with the union of the occluding objects are greyed out (and do not need to be identified as different objects)
     
     B. The second image is a rbg image centered on the object with the union of the occluding objects greyed out.
     
-    *In the paper, they mention that they were able to both find the amodal mask of the object without identifying the individual occluding objects to the model and able to treat many occluding objects as a single occluder, which they describe as suprising as the training regime they used only uses a single occluder*
-    *I suspect that the second image is used as input as they found it led to better amodal(unblocked/ground truth) predictions*
+    *In the paper, they mention that they were able to both find the amodal mask of the object without identifying the individual occluding objects to the model and able to treat many occluding objects as a single occluder, which they describe as suprising as the training regime they used only uses a single occluder. Additionally, I suspect that the second image is used as input as they found it led to better amodal(unblocked/ground truth) predictions (this is also the information that the convex approximation in their results would not have access to, so it would be interesting to remove this image from the input and compare the results)*
 
 4. Use the trained PCNet-Mask to predict the amodal mask of the target object
 5. Generate two images to be used as input to the PCNet-Content:
