@@ -28,9 +28,12 @@ It is interesting to note that much of the work being done with neuromorphic net
 
 As a final thought how time is dealt with is quite different as well. In the biological space there is a leveraging of the physical laws to perform tasks such as neurotransmitter decay, neuron fire-inhibition, etc. that are likely incredibly important to learning with no associated cost. This isn't a particularly ground-breaking thought but it is the main reason why ideas such as building a neuromorphic arcitecture from the ground-up seem so interesting (assuming they encompass this idea which I expect they do). I think it's important to think about the absolute massive amount of energy that would be required to simulate the human brain rather than run one, bridging that gap could possibly lead to more discoveries than going the other way.
 
+## References
+
+[Convolutional Network Pruning][ConvNetPruning]
+
+[Weight-Agnostic RL Paper][WeightAgnostic]
 
 [ConvNetPruning]: https://arxiv.org/pdf/1611.06440.pdf
-
-[UniversalApprox]: http://cognitivemedium.com/magic_paper/assets/Hornik.pdf
 
 [WeightAgnostic]: https://arxiv.org/pdf/1906.04358.pdf
