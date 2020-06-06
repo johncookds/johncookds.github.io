@@ -24,7 +24,7 @@ It is perhaps no wonder then that much of the dynamic currently is to gather the
 
 [Universal Approximation Paper][UniversalApprox]
 
-[InadequateLearning]: https://johncookds.github.io/posts/thoughts/2020/06/06/thoughts-on-inadequate-learning.html
+[InadequateLearning]: https://johncookds.github.io/thoughts/2020/06/07/Thoughts-on-Inadequate-Learning.html
 
 [ConvNetPruning]: https://arxiv.org/pdf/1611.06440.pdf
 
