@@ -1,4 +1,4 @@
-Repo for my Blog!
+Repo for my Blog
 
 Topics to write about with description:
 
