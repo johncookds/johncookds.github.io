@@ -14,10 +14,14 @@ The ["Universal Approximation Theorem"][UniversalApprox] is generally known as s
 In their detail the above paper they lay out three broad reasons why the use of neural networks may fail:
 
 ## 1. Inadequate learning
+
 This is an inability to traverse a loss function intelligently to find the desired combination of weights. With a convex loss function, this is not a problem but such a problem often arises in practical applications. From a given point on the loss function the probability that their is a monotonically decreasing path to the optimal solution decreases with the number of parameters involved(the probability that the optimal solution (and local minima(maybe?) are good approximations also increases though)). 
 It is perhaps no wonder then that much of the dynamic currently is to gather the largest collection of computational resources to build the largest model and then try to train it. Cynically, as the larger the model is, the harder it is to train, and thus for a variations on a given task the more likely it is that an alternative training regime may produce a better outcome. To put it a different way, if you're not solving a problem well there are a lot of ways to do better. I've written further on this here: [Thoughts on Inadequate Learning][InadequateLearning].
 
-## 2. Insufficient number of hidden units:
+## 2. Insufficient number of hidden units
+
+This can be addressed directly by using more units per layer or adding more layers. Additionally it is indirectly addressed by adding in units which are most effective at transmitting relevant information. Common techniques such as convolutions, attention, and transformers are such examples. We can think of new neural net techniques as drasting expanding of capturing X number of hidden unit layers, thus freeing up more room for additional complexity as we push against the constraint of processing capabilities. When a new technique comes along it most often does not lead to a smaller model but a more powerful one, as powerful as the processing capabilities of the research insitution can allow. The common thread that ties most advances in architecture together is increasing the degrees of freedom or flexibility of the model. An easy example of this was attention supporting and then replacing recurrent architectures, essentially giving over control of relating different temporal periods to each other to the model. A statistical concern would be the DoF expansion would lead to overfitting issues and loss of generalizability as we see in more traditional statistical models. However, 
+
 ## 3. Lack of a deterministic relationship between input and target:
 
 # References
