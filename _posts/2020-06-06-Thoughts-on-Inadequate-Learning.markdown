@@ -5,7 +5,7 @@ date:   2020-06-06 17:57:47 -0700
 categories: thoughts
 ---
 
-*this is meant to be part of an ongoing series discussing theoretical aspects of neural networks or just my random thoughts, I will see where it ends up*
+# Inadequate Learning
 
 The problem of inadequate learning is an inability to traverse a loss function intelligently to find the desired combination of weights. With a convex loss function, this is not a problem but such a problem often arises in practical applications. From a given point on the loss function the probability that their is a monotonically decreasing path to the optimal solution decreases with the number of parameters involved(the probability that the optimal solution (and local minima(maybe?) are good approximations also increases though)). 
 
@@ -20,7 +20,7 @@ Shifting towards a more "shaping the loss function" approach may require two thi
 1. A focus on applying a new learning technique to multiple different problems or a more general task (rather than let's say specifically on computer vision). This assumes that techniques to "shape the loss function"
 2. Robustness tests on the learning technique by seeing where in the training process it performs better, and if that generalizes to multiple initializations and different model architectures/complexities.
 
-## Other Thoughts
+## Thoughts on the above thoughts
 
 I am weary that arguing for any sort of stagnation has some aspect of manipulation involved. It is clear that at least outside the halls of the premier research institutions, advances in research do not occur in a linear fashion but yet because time is linear, even if my argument is completely wrong it may not be proven wrong for a portion of time (hopefully I at least wouldn't try making the same argument again). I do think the specific examples I give above either suggest that my framework for thinking about how learning and structure should interact are wrong or that the learning portion is significantly far off. 
 
