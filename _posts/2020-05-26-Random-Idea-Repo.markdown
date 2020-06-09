@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Random Idea Repo"
-date:   2020-06-05 17:57:47 -0700
+date:   2020-05-26 17:57:47 -0700
 categories: thoughts
 ---
 
