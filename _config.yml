@@ -29,6 +29,7 @@ github_username:  johncookds
 google_analytics: G-KWEY4HFVWL
 # Build settings
 theme: minima
+show_excerpts: true
 plugins:
   - jekyll-feed
 
