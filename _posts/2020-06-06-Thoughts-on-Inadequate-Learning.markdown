@@ -5,8 +5,6 @@ date:   2020-06-06 17:57:47 -0700
 categories: thoughts
 ---
 
-## Inadequate Learning
-
 The problem of inadequate learning is an inability to traverse a loss function intelligently to find the desired combination of weights. With a convex loss function, this is not a problem but such a problem often arises in practical applications. From a given point on the loss function the probability that their is a monotonically decreasing path to the optimal solution decreases with the number of parameters involved(the probability that the optimal solution (and local minima(maybe?) are good approximations also increases though)). 
 
 It is perhaps no wonder then that much of the dynamic currently is to gather the largest collection of computational resources to build the largest model and then try to train it. Cynically, as the larger the model is, the harder it is to train, and thus for a variations on a given task the more likely it is that an alternative training regime may produce a better outcome. To put it a different way, if you're not solving a problem well there are a lot of ways to do better. 

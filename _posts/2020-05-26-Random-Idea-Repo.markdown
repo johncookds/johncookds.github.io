@@ -5,7 +5,7 @@ date:   2020-05-26 17:57:47 -0700
 categories: thoughts
 ---
 
-*These are random ideas which I've most likely stolen from somewhere but cannot remember where*
+*These are random ideas which I've most likely stolen from somewhere but cannot remember where.*
 
 
 ## NLP

@@ -5,8 +5,6 @@ date:   2020-06-05 17:57:47 -0700
 categories: thoughts
 ---
 
-## Overview
-
 The ["Universal Approximation Theorem"][UniversalApprox] is generally known as something resembling "in theory neural networks can approximate any function". Sometimes the term "continuous function" is used for a more accurate description. However, given that we define our space with a large number of inputs the "continuous function" distinction is often not necessary (in my mind, the more dimensions in a space the easier it is to approximate any function with a continuous function, note the dimension of the input space also requires an increase in the size of the network model).
 
 In their detail the above paper they lay out three broad reasons why the use of neural networks may fail:

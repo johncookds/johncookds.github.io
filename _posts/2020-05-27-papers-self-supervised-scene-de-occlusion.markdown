@@ -5,9 +5,7 @@ date:   2020-05-28 17:57:47 -0700
 categories: papers computer-vision
 ---
 
-## Overview Explanation
-
-This is a blog post about the paper titled [Self-Supervised Scene De-occlusion][project]. The link is to the main project page which contains a very nice overview of their main steps as well as 2 example use cases. The bathroom re-arrangement use case, shown below, was shared on twitter when the overview video first came out. Setting aside any technical details, the authors deserve credit for releasing a summary video along with examples and demos available on their github project repo.
+This is a review of the paper titled [Self-Supervised Scene De-occlusion][project]. The link is to the main project page which contains a very nice overview of their main steps as well as 2 example use cases. The bathroom re-arrangement use case, shown below, was shared on twitter when the overview video first came out. Setting aside any technical details, the authors deserve credit for releasing a summary video along with examples and demos available on their github project repo.
 
 ![Bathroom re-ordering](https://johncookds.github.io/assets/1/Self-Supervised_Scene_De-occlusion_summary_video.gif)
 
