@@ -18,18 +18,19 @@ The classifier is trained with a higher learning rate(3e-3) than the other runs(
 
 It would be interesting to test how well a BERT model could perform while being iterated through the different fine-tuning tasks with different classifiers but with a certain number of trainable layers during each task as well.
 
+Training Loss
 
 ![training loss](https://johncookds.github.io/assets/2/output_6_0.png)
 
-
+Evaluation Loss
 
 ![evaluation loss](https://johncookds.github.io/assets/2/output_7_0.png)
 
-
+Evaluation F1-Score
 
 ![evaluation f1-score](https://johncookds.github.io/assets/2/output_8_0.png)
 
-
+Training Time
 
 ![training time](https://johncookds.github.io/assets/2/output_9_0.png)
 
