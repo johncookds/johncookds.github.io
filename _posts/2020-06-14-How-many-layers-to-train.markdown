@@ -7,7 +7,7 @@ categories: thoughts
 
 This is an ipynb for visualizing the results of results attained through running the bert_testing.bat file(which uses BERT_NER.py) in my FineTuningNLPModels folder to test performance and efficiency gains of training various layers of the BERT model during the finetuning process. 
 
-It was created in response to often seeing a "you can either train the classifier or the whole model" dichotomy, without regard for a middle ground(and often not a recognition of the significantly worse performance).
+It was created in response to often seeing a "you can either train the classifier or the whole model" dichotomy, without regard for a middle ground(and often not a recognition of the significantly worse performance). The model used was huggingface's BERT model that has 11 total layers (word embeddings were also included as trainable in the 'Full train' run - which I believe is common practice).
 
 
 # Loss and Training Time by Trainable Layers
