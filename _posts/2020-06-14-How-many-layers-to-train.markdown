@@ -12,7 +12,7 @@ This is a post of visualizations and from the results attained through running t
 
 # Loss and Training Time by Trainable Layers
 
-The plots below show decreasing returns to more and more trainable layers and a roughly linearly increase in training time(all models were trained on a GeForce GTX 1070 w/ ~8.5GB). This suggests one should (at least in the NER case(which is a case of highly unbalanced classes)) try to train as many layers as possible. This is quite intuitive but is at least somewhat in contrast to how such questions are treated in example code which often provide the option to train all layers or just train the last layer. For the most part most blog posts/examples do not seem to stress the importance of training more than just the classifier, even if it is just a few extra layers. This importance could also be looked over if just evaulating on the basis of accuracy for imbalanced tasks, as the majority of finetuning tasks are.
+The plots below show decreasing returns to more and more trainable layers and a roughly linearly increase in training time(all models were trained on a GeForce GTX 1070 w/ ~8.5GB). This suggests one should (at least in the NER case(which is a case of highly unbalanced classes)) try to train as many layers as possible. This is quite intuitive but is at least somewhat in contrast to how such questions are treated in example code which often provide the option to train all layers or just train the last layer. For the most part most blog posts/examples do not seem to stress the importance of training more than just the classifier, even if it is just a few extra layers. This importance could also be looked over if just evaluating on the basis of accuracy for imbalanced tasks, as the majority of finetuning tasks are.
 
 The classifier is trained with a higher learning rate(3e-3) than the other runs(3e-5), it is likely that the optimal training rate for the runs with a small number of trained layers is actually somewhere between those two values.
 
@@ -37,7 +37,7 @@ Training Time
 
 # Parameter Drift
 
-If we look below at the base parameter drift for purely the classifier we see much greater parameter drift for just the classifier training than the others. Granted this is oftly crude and highly dependent on intialization(although multiple runs were tested) and learning rate, but possibly it suggests that too much is being required of the classifier when it is being used as the sole trainable parameter.
+If we look below at the base parameter drift for purely the classifier we see much greater parameter drift for just the classifier training than the others. Granted this is very crude and highly dependent on initialization(although multiple runs were tested) and learning rate, but possibly it suggests that too much is being required of the classifier when it is being used as the sole trainable parameter.
 
 
 <div>
