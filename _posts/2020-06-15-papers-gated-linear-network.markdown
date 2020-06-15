@@ -5,7 +5,7 @@ date:   2020-06-14 17:57:47 -0700
 categories: papers
 ---
 
-Deepmind recently released a [paper introducing "a new family of backpropagation-free neural networks" called Gated Linear Networks][paper]. The most important thing to note about GLN's is each neuron is actively trying to predict the target which means its weights can be updated locally without the need for backpropagation through higher layers. A GLN's non-linearity comes from the selection of which weights to apply, importantly only the chosen weights are trained not the actual context function that selects which weights are chosen. which makes any single prediction the product of a series of matrix multiplication a.k.a. a linear set of features allowing for what the paper describes as the "construction of meaningful saliency maps".
+Deepmind recently released a [paper introducing "a new family of backpropagation-free neural networks" called Gated Linear Networks][paper]. The most important thing to note about GLN's is each neuron is actively trying to predict the target which means its weights can be updated locally without the need for backpropagation through higher layers. A GLN's non-linearity comes from the selection of which weights to apply, importantly only the chosen weights are trained not the actual context function that selects which weights are chosen. This makes any single prediction the product of a series of matrix multiplication a.k.a. a linear set of features allowing for what the paper describes as the "construction of meaningful saliency maps".
 
 ![GLN Framework](https://johncookds.github.io/assets/3/glns.png)
 
