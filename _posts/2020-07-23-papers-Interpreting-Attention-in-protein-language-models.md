@@ -9,6 +9,8 @@ The paper [BERTology Meets Biology: Interpreting Attention in Protein Language M
 
 ## Analysis Tools
 
+The authors mainly use an individual layer's attention heads and a layer output's predictive capabilities to demonstrate higher-level understanding.
+
 ### Attention Analysis
 
 The authors identify specific important tokens(for secondary structure or binding sites) or token-pairs(for contact maps) and look at the proportion of attention that is allocated to those important tokens/interactions. The specifics of how this is done is tied to the index of the important tokens. Thus, for a given layer we look at the attention given from a source_index ('from_index' in their [code][repo]) to a destination_index('to_index' in their [code][repo]). I mention this because I believe it is an open question whether we can interpret this procedure as capturing the 'attention' given to a specific token.
