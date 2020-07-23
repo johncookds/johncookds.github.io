@@ -7,7 +7,9 @@ categories: papers biology
 
 The paper [BERTology Meets Biology: Interpreting Attention in Protein Language Models][paper] analyses a transformer language model pre-trained on protein sequences, in order to detect embedded knowledge of higher-level protein properties. These properties are 3-dimensional structure, binding sites, and contact maps(amino acids close to each other in 3-dimensional space but far apart in the 2-d sequence). The language model encodes the 20 standard amino acids and is pre-trained using a masking technique. Solely the 2-d sequence structure is encoded during the positional embedding and no information about the 3-d structure. They also provide useful [code for creating 3-d protein models visualizing the attention weights][visual_code].
 
-## Attention Analysis
+## Analysis Tools
+
+### Attention Analysis
 
 The authors identify specific important tokens(for secondary structure or binding sites) or token-pairs(for contact maps) and look at the proportion of attention that is allocated to those important tokens/interactions. The specifics of how this is done is tied to the index of the important tokens. Thus, for a given layer we look at the attention given from a source_index ('from_index' in their [code][repo]) to a destination_index('to_index' in their [code][repo]). I mention this because I believe it is an open question whether we can interpret this procedure as capturing the 'attention' given to a specific token.
 
@@ -21,11 +23,11 @@ The author's presentation below of the attention similarity matrix being quite s
 ![Attention Similarity vs BLOSUM substitution score](https://johncookds.github.io/assets/5/attention_blosum.png)
 
 
-## Probing Tasks
+### Probing Tasks
 
 Before continuing with the paper's protein structure, binding sites, and cross-layer results I want to briefly describe the other main tool of analysis the authors' used called "probing tasks."" For each individual probing task the authors build a softmax linear classifier on a layer outputs. The linear classifier is trained to predict the outcome using the token's output vector (for token-level tasks) or the two tokens' element-wise difference concatenated with the tokens' product. For both scenarios the weights of the original model are frozen during the training process. These tools are used in the "Cross-Layer Analysis" section below.
 
-## Higher-Level Relationships
+## Understanding Higher-Level Relationships
 
 ### Protein Structure(contact maps)
 
